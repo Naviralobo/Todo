@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: yellow;
+}
+
+.container {
+  width: 300px;
+}
+
+h2 {
+  margin-left: 70px;
+}
+
+input[type="text"] {
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+#addButton {
+  background-color: rgb(182, 227, 19);
+  height: 33px;
+  width: 33px;
+  color: rgb(47, 18, 97);
+  border: 1px solid rgb(81, 11, 139);
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+#addButton:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+#addButton:disabled {
+  background-color: gray;
+  color: white;
+  opacity: 30%;
+  pointer-events: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  border: 1px solid grey;
+  height: 30px;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 20px;
+  transition: transform 0.2s ease;
+  transform: translateX(-100%);
+}
+
+.deleteBtn {
+  background-color: #ff3333;
+  color: #fff;
+  border: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+}
+li:hover .deleteBtn {
+  opacity: 1;
+}
+.deleteBtn:hover {
+  background-color: pink;
+  cursor: pointer;
+  color: red;
+}
+
+input[type="checkbox"]:checked + label {
+  color: rgb(198, 168, 199);
+}
+.countDiv {
+  display: flex;
+  column-gap: 20px;
+}
+.countDiv div {
+  color: aqua;
+}
+li.slideIn {
+  transform: translateX(0);
+}
+li.slideOut {
+  transform: translateX(-500%);
+}
